@@ -27,6 +27,8 @@ Route::get('/', function () {
 Route::group(['middleware' => ['auth']], function () {
    
 
+    
+    
     Route::get('index', function(){
     return View('pages.acceuil'); 
     });
